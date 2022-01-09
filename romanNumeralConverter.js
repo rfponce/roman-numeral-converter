@@ -104,7 +104,7 @@ function convertToRoman(num) {
 }
  
 const check = function () {
-  if (number.valueAsNumber < 1 || number.valueAsNumber > 3999) {
+  if (number.valueAsNumber < 1 || number.valueAsNumber > 3999 || isNaN(number.valueAsNumber)) {
     alert("Please enter a positive integer number between 1 and 3999");
     number.valueAsNumber = 1;
   }
